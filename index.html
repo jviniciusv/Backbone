@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello World</title>
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/backbone.js"></script>
+        <script>
+//         	$(document).ready(function(){
+//         		var HelloView = Backbone.View.extend({
+//         			el: $("body"),
+//         			initialize: function(nome, idade){
+//         				$(this.el).append("ola " + nome " de " + idade + " anos");
+//         			}
+        			
+//         		});
+        		
+//         		var hello = new HelloView("vinicius","17");
+//         	});
+			$(document).ready(function(){
+				var HelloView = Backbone.View.extend({
+					el: $("body"),
+					initialize: function() {
+						vini();
+					},
+					vini: function(){
+						alert("oi");
+					}
+				});
+				
+				var h = new HelloView;
+			});
+        </script>
+    </head>
+    <body></body>
+</html>
